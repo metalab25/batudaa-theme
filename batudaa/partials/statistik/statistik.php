@@ -80,6 +80,14 @@ $(document).ready(function() {
 <script src="<?php echo base_url()?>assets/js/highcharts/highcharts.js"></script>
 <script src="<?php echo base_url()?>assets/js/highcharts/highcharts-more.js"></script>
 <script src="<?php echo base_url()?>assets/js/highcharts/exporting.js"></script>
+<script>
+$(function(){
+	$('#showData').click(function(){
+		$('tr.tr-lebih').removeClass('hide');
+		$('#showData').hide();
+	});
+});
+</script>
 
 <?php
 echo "
@@ -122,7 +130,7 @@ echo "
 			<thead>
 			<tr>
 				<th rowspan=2>No</th>
-				<th rowspan=2>Kelompok</th>
+				<th rowspan=2 class='text-left'>Kelompok</th>
 				<th colspan=2>Jumlah</th>";
 				if($jenis_laporan == 'penduduk'){
 					echo "
@@ -146,9 +154,13 @@ echo "
 			</thead>
 			<tbody>";
 			$i=0; $l=0; $p=0;
+			$hide=''; $not_hide=0;
+			$jml = count($stat);
 			foreach($stat as $data){
+				$not_hide++;
+				if ($not_hide > 10 AND $jml > 11) $hide='tr-lebih hide';
 				echo "
-				<tr>
+				<tr class='$hide'>
 					<td class='text-right'>".$data['no']."</td>
 					<td>".$data['nama']."</td>
 					<td class='text-right'>".$data['jumlah']."</td>
@@ -168,7 +180,13 @@ echo "
 			}
 			echo "
 			</tbody>
-			</table>
+			</table>";
+
+			if ($hide == "tr-lebih hide"){
+				echo "<button class='btn btn-xs btn-success' id='showData'>Selengkapnya...</button>";
+			}
+
+			echo "
 			</div>
 		</div>
 	</div>
