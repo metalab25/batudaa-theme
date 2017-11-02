@@ -24,5 +24,6 @@ $(document).ready(function() {
 	<?php foreach($teks_berjalan AS $data) {?>
 	<span><?php echo strip_tags($data['isi']); ?></span>
 	<?php } ?>
+	<span>&nbsp;</span>
 </div>
 </div>
