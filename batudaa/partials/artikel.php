@@ -6,7 +6,15 @@ if ($single_artikel["id"]){
 	<div class='list-frame artikel' id=\"artikel-".$single_artikel["judul"]."\">
 		<h1 class='artikel-judul text-title mt0'><strong>$single_artikel[judul]</strong></h1>
 
-		<div class='artikel-waktu text-muted mb15'><span class='mr10'><i class='fa fa-clock-o'></i> ".tgl_indo2($single_artikel['tgl_upload'])."</span> <span><i class='fa fa-user'></i> ".$single_artikel['owner']."</span></div>";
+		<div class='artikel-waktu text-muted mb15'>
+			<span class='mr10'><i class='fa fa-clock-o'></i> ".tgl_indo2($single_artikel['tgl_upload'])."</span>
+			<span class='mr10'><i class='fa fa-user'></i> ".$single_artikel['owner']."</span> ";
+			# TODO OpenSID#697 : akan bekerja setelah PR diterima
+			if (trim($single_artikel['kategori']) != '') {
+				echo "<span><i class='fa fa-tag'></i> <a href='", site_url("first/kategori/$single_artikel[id_kategori]") ,"'>$single_artikel[kategori]</a></span>";
+			}
+		echo "
+		</div>";
 
 		if($single_artikel['gambar']!=''){
 			if ( is_file(LOKASI_FOTO_ARTIKEL."sedang_".$single_artikel['gambar'])) {
@@ -28,7 +36,7 @@ if ($single_artikel["id"]){
 		}
 
 		// gambar tambahan
-		// TODO #691 : bagusnya fitur ini diganti dengan artikel yang bisa merujuk ke album atau sebaliknya
+		// TODO OpenSID#691 : bagusnya fitur ini diganti dengan artikel yang bisa merujuk ke album atau sebaliknya
 		echo "
 		<div class='list-view artikel-galeri'>
 		<div class='row'>";
@@ -74,11 +82,11 @@ if ($single_artikel["id"]){
 				</div>";
 			}
 		}
-		echo "
-		</div>
-		</div>";
 
 		echo "
+		</div>
+		</div>
+
 		<div class='clearfix form-group artikel-bagikan'>
 			<ul id='pageshare' title='bagikan ke teman anda' class='pagination'>
 				<li id='fb'><a name='b_share' href='http://www.facebook.com/sharer.php?u=".site_url()."first/artikel/".$single_artikel["id"]."'><i class='fa fa-facebook-square'></i><span class='hidden-xs'> Share</span></a></li>

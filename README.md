@@ -7,8 +7,8 @@
 ## Installasi
 
 1. Release terbaru dapat diunduh dari laman release di https://github.com/batudaa/batudaa-theme/releases. Pilih release yang dibutuhkan dan download Source dengan tipe file yang diinginkan.
-2. Selanjutnya extract file yang telah didownload dan salin folder `batudaa` yang ditemukan didalamnya ke dalam folder `themes`nya aplikasi OpenSID.
-3. [Setting aplikasi OpenSID](https://github.com/OpenSID/OpenSID/wiki/Panduan-Konfigurasi-Aplikasi#setting-aplikasi) dan masukkan **batudaa** sebagai nilai dari [web_theme](https://github.com/OpenSID/OpenSID/wiki/Panduan-Konfigurasi-Aplikasi#setting-web_theme).
+2. Selanjutnya extract file yang telah didownload dan salin folder `batudaa` yang ditemukan didalamnya ke dalam folder `desa/themes/` di aplikasi OpenSID.
+3. [Setting aplikasi OpenSID](https://github.com/OpenSID/OpenSID/wiki/Panduan-Konfigurasi-Aplikasi#setting-aplikasi) dan pilih tema **batudaa** untuk [web_theme](https://github.com/OpenSID/OpenSID/wiki/Panduan-Konfigurasi-Aplikasi#setting-web_theme).
 4. Refresh halaman website dari aplikasi OpenSID untuk melihat perubahannya.
 
 
@@ -36,6 +36,6 @@ Silakan bergabung dengan [Forum Pengguna dan Pegiat OpenSID](https://www.faceboo
 
 ## Lisensi
 
-Batudaa adalah proyek open source yang bernaung dibawah lisensi MIT.
+Batudaa adalah proyek open source yang bernaung dibawah [lisensi MIT](http://opensource.org/licenses/MIT).
 
 Tidak diijinkan untuk mengeluarkan informasi lisensi dan copyright disetiap distribusi. Aturan ini tidak termasuk informasi copyright yang ditampilkan dibagian *footer tag*.
