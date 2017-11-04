@@ -27,6 +27,13 @@ Kurang puas dengan theme yang digunakan? OpenSID memberikan kesempatan kepada Ad
 Silakan bergabung dengan [Forum Pengguna dan Pegiat OpenSID](https://www.facebook.com/groups/opensid) di Facebook. Group ini merupakan tempat berbagi informasi dan saling membantu menggunakan dan mengembangkan aplikasi OpenSID. Silakan mempergunakan forum itu juga untuk bertanya mengenai theme batudaa dan untuk memberi usulan.
 
 
+## Tanya-Jawab
+
+### T: Kenapa tidak semua widget tampilannya selaras dengan theme?
+
+**J:** Widget masih bagian internal dari OpenSID dan kebanyakan belum *bootstrap ready*. Saat ini tag html atau layout widget belum bisa disesuaikan lewat theme manapun.
+
+
 ## Lisensi
 
 Batudaa adalah proyek open source yang bernaung dibawah lisensi MIT.
