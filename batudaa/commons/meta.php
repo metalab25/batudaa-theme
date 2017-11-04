@@ -42,4 +42,6 @@
 <script language='javascript' src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
 <script language='javascript' src="<?php echo base_url('assets/bootstrap/js/bootstrap.js'); ?>"></script>
 <script language='javascript' src='<?php echo base_url("$this->theme_folder/batudaa/vendor/fancybox/jquery.fancybox.js"); ?>'></script>
+<script language='javascript' src="<?php echo base_url('assets/js/jquery.cycle2.min.js') ?>"></script>
+<script language='javascript' src="<?php echo base_url('assets/js/jquery.cycle2.carousel.js') ?>"></script>
 <script language='javascript' src='<?php echo base_url("$this->theme_folder/batudaa/assets/js/batudaa.js"); ?>'></script>

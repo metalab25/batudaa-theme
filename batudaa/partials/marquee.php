@@ -1,7 +1,5 @@
 <?php  if(!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<script src="<?php echo base_url('assets/js/jquery.cycle2.min.js') ?>"></script>
-<script src="<?php echo base_url('assets/js/jquery.cycle2.carousel.js') ?>"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$('#marquee').on('cycle-initialized', function( event, opts ) {
