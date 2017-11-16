@@ -19,8 +19,6 @@
 
 				<div class='carousel-inner'>
 					<?php
-					// FIXME: sayang skali developer opensid tidak ikut mengambil judul untuk slider artikel,
-					//        jadi judul tidak bisa ditampilkan. padahal kalau bisa tampil akan lebih baik lagi :(
 					$tmp = 0;
 					foreach($slider_gambar['gambar'] as $item) {
 						$help = ($tmp == 0) ? 'active' : '';
@@ -29,9 +27,10 @@
 						<div class='item $help'>
 							<img src=\"$img\"/>
 							<div class='luncuran-caption'>
-								<div class='luncuran-body'>";
+								<div class='luncuran-body'>
+									<h2>$item[judul]</h2>";
 									if ((int) $item['id'] > 0) {
-										echo "<div class='hidden-xs'><a href='". site_url("first/artikel/$item[id]") ."' class='btn btn-warning btn-lg'><i class='fa fa-newspaper-o'></i> Baca Artikel</a></div>";
+										echo "<div class='hidden-xs'><a href='". site_url("first/artikel/$item[id]") ."' class='btn btn-success btn-lg'><i class='fa fa-newspaper-o'></i> Baca Artikel</a></div>";
 									}
 								echo "
 								</div>
