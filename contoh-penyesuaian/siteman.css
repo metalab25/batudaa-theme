@@ -1,0 +1,7 @@
+/* salin berkas ini ke folder desa/css/ */
+
+/* Area kerja dihalaman admin menjadi kurang luas karena adanya footer.
+Apabila footer belum dibutuhkan, maka dapat disembunyikan untuk sementara waktu dengan ini.*/
+#footer {
+	display: none !important;
+}
