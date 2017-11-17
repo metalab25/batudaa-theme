@@ -1,9 +1,15 @@
 /* nama desa terlalu panjang. sebutan desa tidak ditampilkan. */
 .web-title-desa {
-	display: none;
+	/*display: none;*/
 }
 
 /* nama kabupaten terlalu panjang. sebutan kabupaten tidak ditampilkan. */
 .web-title-kabupaten {
-	display: none;
+	/*display: none;*/
+}
+
+
+#luncuran .luncuran-caption h2 {
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.7);
 }

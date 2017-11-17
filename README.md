@@ -33,6 +33,10 @@ Silakan bergabung dengan [Forum Pengguna dan Pegiat OpenSID](https://www.faceboo
 
 **J:** Widget masih bagian internal dari OpenSID dan kebanyakan belum *bootstrap ready*. Saat ini tag html atau layout widget belum bisa disesuaikan lewat theme manapun.
 
+### T: Kenapa halaman login dan admin tampilannya tidak ikut berubah?
+
+**J:** Batudaa hanya theme untuk website (halaman depan). OpenSID sendiri belum menyediakan fasilitas pembuatan theme untuk halaman login dan admin. Namun memberikan kesempatan untuk melakukan penyesuaian lewat berkas `desa/css/siteman.css`.
+
 
 ## Lisensi
 
