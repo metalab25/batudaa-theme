@@ -1,5 +1,5 @@
 /*!
- *   batudaa-theme v1.0
+ *   batudaa-theme v1.1
  *   Author: Abdul Gani <http://github.com/batudaa>
  *	 URL: http://github.com/batudaa/batudaa-theme
  *   License: Open source - MIT
