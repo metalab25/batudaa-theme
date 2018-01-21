@@ -13,7 +13,7 @@
 			<a class='navbar-brand with-subbrand' href="<?php echo site_url('first'); ?>">
 				<div>
 					<div class='title hidden-sm'><?php echo "<span class='hidden-xs web-title-desa'>" . ucwords($this->setting->sebutan_desa) . ' </span>' . $desa['nama_desa'] ?></div>
-					<div class='sub-title hidden-xs hidden-sm'><?php echo "<span class='web-title-kabupaten'>" . ucwords($this->setting->sebutan_kabupaten . ' </span>' . $desa['nama_kabupaten']) ?></div>
+					<div class='sub-title hidden-xs hidden-sm'><?php echo "<span class='web-title-kabupaten'>" . ucwords($this->setting->sebutan_kecamatan . ' </span>' . $desa['nama_kabupaten']) ?> <?php echo "<span class='web-title-kabupaten'>" . ucwords($this->setting->sebutan_kabupaten . ' </span>' . $desa['nama_kabupaten']) ?></div>
 				</div>
 			</a>
 		</div>
